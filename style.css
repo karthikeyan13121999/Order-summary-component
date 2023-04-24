@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+}
+
+main{
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif; 
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffff;
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.details{
+    margin: 0 50px 10px 50px;
+    color: rgb(201, 197, 197); 
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 50px 10px 50px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    background-color:hsl(224, 86%, 36%);
+    margin: 10px 50px;
+    border-radius: 15px;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.2);
+    
+}
+
+.box img{
+    padding: 8px;
+}
+
+.box div{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.box a{
+    color: hsl(223, 47%, 23%);
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+     
+}
+
+.cancel{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.cancel a{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+}
+
+.p1{
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.p2{
+    color:rgb(152, 152, 185) ;
+}
+
+button:hover{
+    background-color: hsl(245, 75%, 52%);
+    transition-duration: 0.5s;
+}
+
+.cancel a:hover{
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.box a:hover{
+    color: rgb(95, 95, 165);
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 425px) {
+    
+    main{
+        background-image: url(/img/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 87%;
+    }
+    h2{
+        font-size: 22px;
+    }
+    button{
+        margin: 10px 10px;
+    }
+    .box{
+        margin: 10px 10px;
+    }
+    .cancel{
+        margin: 10px;
+        font-size: 12px;
+    }
+}
